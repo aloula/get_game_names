@@ -1,7 +1,6 @@
-### Script to extract game names from gamelist files
+## Script to extract game names from gamelist files
 
 ### It can be used with retro consoles based on EmulationStation as Recalbox and RetroPie. It reads the gamelist.xml files recursively and extract the game ame saving it to a gamelist.txt file
-
 
 
 Instructions:
