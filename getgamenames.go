@@ -10,10 +10,12 @@ package main
 import (
 	"encoding/xml"
 	"fmt"
+	"github.com/cheggaaa/pb"
 	"io/ioutil"
 	"os"
 	"sort"
 	"strings"
+	"time"
 )
 
 // Gamelist XML Struct
@@ -96,12 +98,21 @@ func main() {
 		os.Exit(1)
 	}
 
+	// var countSize int = int(fileSize/1000)
+	// count := countSize
+	// bar := pb.StartNew(count)
+	// for i := 0; i < count; i++ {
+    // 	bar.Increment()
+    // 	time.Sleep(time.Millisecond)
+	// }
+	// bar.FinishPrint("The End!")
+
 	// Extract game names recursively and save it to gamelist.txt file
 	fmt.Println("Starting game names extraction...")
 	for _, f := range folders {
 		folders := f.Name()
-		//fmt.Println(folders)
 		gameNames := getGameList(folders)
+		bar := pb.StartNew(len(gameNames))
 		if len(gameNames) != 0 {
 			file.WriteString("================================================================================\n")
 			file.WriteString(strings.Title(folders))
@@ -109,13 +120,15 @@ func main() {
 			for i := 0; i < len(gameNames); i++ {
 				//fmt.Println(gameNames[i])
 				file.WriteString(gameNames[i] + "\n")
+				bar.Increment()
+				time.Sleep(time.Millisecond*5)
 			}
 		}
+	bar.Finish()
 	}
 	err = file.Close()
 	if err != nil {
 		fmt.Println(err)
 		return
 	}
-	fmt.Println("Done!!!")
 }
