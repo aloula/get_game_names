@@ -1,6 +1,5 @@
-================================================================================
-Fba_libretro
-================================================================================
+Platform: Fba_libretro
+
 1941: Counter Attack
 1942
 1943 Kai: Midway Kaisen
@@ -13,41 +12,27 @@ Area 88
 Ataxx
 Battle Circuit
 Black Dragon
-Block Block
-Bowl-O-Rama
-CADILACS AND DINOSAURS
-CADILACS: KYOURYUU SHIN SEIKI
-CAPCOM SPORTS CLUB
 Cadillacs Kyouryuu-Shinseiki
 Captain Commando
 Chiki Chiki Boys
-Commando
 Cyberbots : Fullmetal Madness
 Dai Makai-Mura
 Dungeons & Dragons : Shadow over Mystara
 Dungeons & Dragons : Tower of Doom
 Exed Exes
 F-1 Dream
-FINAL FIGHT
 Final Fight
 Giga Wing
 Great Mahou Daisakusen
 Gun.Smoke
-HYPER STREET FIGHTER II: THE ANNIVERSARY EDITION
-HYPER STREET FIGHTER II: THE ANNIVERSARY EDITION (JP)
 Hissatsu Buraiken
 Hyper Street Fighter II: The Anniversary Edition
 JoJo no Kimyou na Bouken
 JoJo's Venture
-KNIGHTS OF THE ROUND
 Knights of the Round
 Last Duel
 Legendary Wings
 Lost Worlds
-MARVEL SUPER HEROES
-MARVEL SUPER HEROES
-MARVEL SUPER HEROES VS. STREET FIGHTER
-MARVEL VS. CAPCOM : CLASH OF SUPER HEROES
 Mad Gear
 Magic Sword
 Makai-Mura
@@ -59,8 +44,6 @@ Mighty! Pang
 Muscle Bomber Duo: Heat Up Warriors
 Nemo
 Pang! 3
-Pirate Ship Higemaru
-Pnickies
 Pocket Fighter
 Powered Gear: Strategic Variant Armor Equipment
 Progear No Arashi
@@ -68,19 +51,6 @@ Puzz Loop 2
 Rockman 2: The Power Fighters
 Rockman: The Power Battle
 Rush & Crash
-STREET FIGHTER II' : CHAMPION EDITION
-STREET FIGHTER II' : CHAMPION EDITION
-STREET FIGHTER II' : CHAMPION EDITION
-STREET FIGHTER II': CHAMPION EDITION
-STREET FIGHTER II': CHAMPION EDITION
-STREET FIGHTER II': CHAMPION EDITION (ACCELERATOR)
-STREET FIGHTER III: NEW GENERATION
-STREET FIGHTER ZERO
-STREET FIGHTER ZERO
-STREET FIGHTER ZERO
-STREET FIGHTER ZERO 2 ALPHA
-STREET FIGHTER ZERO 2 ALPHA
-SUPER PUZZLE FIGHTER II X
 Saturday Night Slam Masters
 Section Z
 Senjo no Okami II
@@ -103,8 +73,6 @@ Super Muscle Bomber: The International Blowout
 Super Puzzle Fighter II X
 Super Street Fighter II Turbo
 Super Street Fighter II: The New Challengers
-THE PUNISHER
-THE PUNISHER (JP)
 Tatakai no Banka
 Tenchi wo Kurau
 Tenchi wo Kurau II: Sekiheki no Tatakai
@@ -124,13 +92,16 @@ Varth: Operation Thunderstorm
 Vulgus
 Warzard
 Willow
-X-MEN VS. STREET FIGHTER
 X-Men vs. Street Fighter
 X-Men: Children of the Atom
 Zero Team Usa
+
+- Total Games = 95
+
 ================================================================================
-Megadrive
-================================================================================
+
+Platform: Megadrive
+
 Aero the Acro-Bat
 Aero the Acro-Bat 2
 Air Buster
@@ -158,12 +129,9 @@ Fatal Fury 2
 Flashback : The Quest for Identity
 Forgotten Worlds
 Gaiares
-Galaxy Force II
-Gemfire
 Ghouls'n Ghosts
 Golden Axe
 Golden Axe II
-Gunship
 Gunstar Heroes
 Hellfire
 Insector X
@@ -185,8 +153,6 @@ Out of this World
 OutRun
 OutRun 2019
 Pac-Mania
-Paperboy
-Paperboy 2
 Phelios
 Pier Solar and the Great Architects
 Pitfall : The Mayan Adventure
@@ -212,7 +178,6 @@ Streets of Rage 2
 Streets of Rage 3
 Strider
 Sub-Terrania
-Super Thunder Blade
 Super Volley Ball
 Syd of Valis
 Teenage Mutant Ninja Turtles : The Hyperstone Heist
@@ -231,9 +196,13 @@ Wonder Boy III : Monster Lair
 Wonder Boy in Monster World
 World Heroes
 World of Illusion Starring Mickey Mouse and Donald Duck
+
+- Total Games = 94
+
 ================================================================================
-Snes
-================================================================================
+
+Platform: Snes
+
 Aero Fighters
 Aladdin
 Battletoads & Double Dragon
@@ -255,7 +224,6 @@ Gradius III
 GunForce - Battle Fire Engulfed Terror Island
 Kirby Super Star
 Kirby's Avalanche
-Kirby's Avalanche
 Kirby's Dream Course
 Kirby's Dream Land 3
 Mega Man 7
@@ -266,13 +234,13 @@ Mickey Mania : The Timeless Adventures of Mickey Mouse
 Mickey's Playtown Adventure : A Day of Discovery!
 Mickey's Ultimate Challenge
 Ninja Gaiden Trilogy
+Q*bert 3
 R-Type III
 Raiden Trad
 Super Castlevania IV
 Super Double Dragon
 Super Ghouls'n Ghosts
 Super Mario All-Stars
-Super Mario All-Stars + Super Mario World
 Super Mario Kart
 Super Mario World
 Super Mario World 2 : Yoshi's Island
@@ -289,31 +257,18 @@ The Great Circus Mystery Starring Mickey & Minnie
 The Legend of Zelda : A Link to the Past
 The Legend of the Mystical Ninja
 U.N. Squadron
+
+- Total Games = 54
+
 ================================================================================
-X68000
-================================================================================
+
+Platform: X68000
+
 Akumajo Dorakura
-Gradius
-Gradius
-Gradius
-Gradius
-Gradius
-Gradius
-Gradius
-Gradius
 Gradius II Gofer No Yabou
-Nemesis '93 Gradius 2
-Nemesis '93 Gradius 2
 Nemesis '94 Gradius 2
-Parodius Da!
-Parodius Da!
-Parodius Da!
-Street Fighter II Champion Edition
-Street Fighter II Champion Edition
-Street Fighter II Champion Edition
-Street Fighter II Champion Edition
-Street Fighter II Champion Edition
-Strider Hiryuu
-Strider Hiryuu
-Strider Hiryuu
-Strider Hiryuu
+
+- Total Games = 3
+
+================================================================================
+

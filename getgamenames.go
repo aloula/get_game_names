@@ -13,6 +13,7 @@ import (
 	"io/ioutil"
 	"os"
 	"sort"
+	"strconv"
 	"strings"
 )
 
@@ -102,14 +103,21 @@ func main() {
 		folders := f.Name()
 		//fmt.Println(folders)
 		gameNames := getGameList(folders)
-		if len(gameNames) != 0 {
-			file.WriteString("================================================================================\n")
-			file.WriteString(strings.Title(folders))
-			file.WriteString("\n================================================================================\n")
-			for i := 0; i < len(gameNames); i++ {
+		platform := "Platform: " + strings.Title(folders) + "\n\n"
+		totalGames := len(gameNames)
+		strTotalGames := "\n- Total Games = " + strconv.Itoa(totalGames)
+		//fmt.Println(totalGames)
+		if totalGames != 0 {
+			//file.WriteString("================================================================================\n")
+			file.WriteString(platform)
+			//file.WriteString("\n================================================================================\n")
+			for i := 0; i < totalGames; i++ {
 				//fmt.Println(gameNames[i])
 				file.WriteString(gameNames[i] + "\n")
 			}
+			//file.WriteString("================================================================================")
+			file.WriteString(strTotalGames)
+			file.WriteString("\n\n================================================================================\n\n")
 		}
 	}
 	err = file.Close()
