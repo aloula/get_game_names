@@ -53,6 +53,8 @@ type gameList struct {
 	} `xml:"folder"`
 } 
 
+// Global variables
+var totalGamesAllSystems int
 
 // Function to extract the game names and sort it
 func getGameList(folder string) []string {
@@ -99,12 +101,15 @@ func main() {
 
 	// Extract game names recursively and save it to gamelist.txt file
 	fmt.Println("Starting game names extraction...")
+	
+	//totalRoms := 0
 	for _, f := range folders {
 		folders := f.Name()
 		//fmt.Println(folders)
 		gameNames := getGameList(folders)
 		platform := "Platform: " + strings.Title(folders) + "\n\n"
 		totalGames := len(gameNames)
+		totalGamesAllSystems = totalGamesAllSystems + totalGames
 		strTotalGames := "\n- Total Games = " + strconv.Itoa(totalGames)
 		//fmt.Println(totalGames)
 		if totalGames != 0 {
@@ -120,6 +125,8 @@ func main() {
 			file.WriteString("\n\n================================================================================\n\n")
 		}
 	}
+	strTotalGamesAllSystems := "- Total Games All Systems = " + strconv.Itoa(totalGamesAllSystems)
+	file.WriteString(strTotalGamesAllSystems)
 	err = file.Close()
 	if err != nil {
 		fmt.Println(err)
