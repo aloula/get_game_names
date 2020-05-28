@@ -76,29 +76,16 @@ func getGameList(folder string) []string {
 	return gameNames
 }
 
-// Main
-func main() {
-	// Check arguments
-	if len(os.Args) != 2 {
-		fmt.Printf("Usage: %s <path to roms file> \n ", os.Args[0])
-		fmt.Printf("Example: %s /recalbox/share/roms \n ", os.Args[0])
-		fmt.Printf("Example: %s roms \n", os.Args[0])
-		os.Exit(1)
-	}
-	romsPath := os.Args[1]
+func extractGameList(romsPath string) error {
 	file, err := os.Create("gamelist.txt")
 	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
+		return err
 	}
-
 	// List folders (system names) inside roms dir 
 	folders, err := ioutil.ReadDir(romsPath + "/.")
 	if err != nil {
-		fmt.Println(err)
-		os.Exit(1)
+		return err
 	}
-
 	// Extract game names recursively and save it to gamelist.txt file
 	fmt.Println("Starting game names extraction...")
 	
@@ -127,10 +114,22 @@ func main() {
 	}
 	strTotalGamesAllSystems := "- Total Games All Systems = " + strconv.Itoa(totalGamesAllSystems)
 	file.WriteString(strTotalGamesAllSystems)
-	err = file.Close()
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
+	file.Close()
 	fmt.Println("Done!!!")
+	return err
+}
+
+
+// Main
+func main() {
+	// check command line arguments
+	if len(os.Args) != 2 {
+		fmt.Printf("Usage: %s <path to roms file> \n ", os.Args[0])
+		fmt.Printf("Example: %s /recalbox/share/roms \n ", os.Args[0])
+		fmt.Printf("Example: %s roms \n", os.Args[0])
+		os.Exit(1)
+	}
+	romsPath := os.Args[1]
+	extractGameList(romsPath)
+	os.Exit(0)
 }

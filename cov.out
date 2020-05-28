@@ -1,0 +1,20 @@
+mode: set
+getgamenames/getgamenames.go:60.42,62.16 2 1
+getgamenames/getgamenames.go:66.2,69.42 4 1
+getgamenames/getgamenames.go:75.2,76.18 2 1
+getgamenames/getgamenames.go:62.16,65.3 1 1
+getgamenames/getgamenames.go:69.42,71.40 1 1
+getgamenames/getgamenames.go:71.40,73.4 1 1
+getgamenames/getgamenames.go:79.45,81.16 2 1
+getgamenames/getgamenames.go:85.2,86.16 2 1
+getgamenames/getgamenames.go:90.2,93.28 2 1
+getgamenames/getgamenames.go:115.2,119.12 5 1
+getgamenames/getgamenames.go:81.16,83.3 1 1
+getgamenames/getgamenames.go:86.16,88.3 1 1
+getgamenames/getgamenames.go:93.28,102.22 7 1
+getgamenames/getgamenames.go:102.22,106.36 2 1
+getgamenames/getgamenames.go:111.4,112.112 2 1
+getgamenames/getgamenames.go:106.36,109.5 1 1
+getgamenames/getgamenames.go:124.13,126.23 1 0
+getgamenames/getgamenames.go:132.2,134.12 3 0
+getgamenames/getgamenames.go:126.23,131.3 4 0
