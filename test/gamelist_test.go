@@ -8,11 +8,6 @@ import (
 	"testing"
 )
 
-//test main
-// func TestMain(m *testing.M) {
-//     exitcode := m.Run()
-// 	os.Exit(exitcode)
-// }
 
 // test game list functions
 func TestGameList(t *testing.T) {
