@@ -10,11 +10,16 @@ package main
 import (
 	"fmt"
 	"getgamenames/pkg"
+	"github.com/common-nighthawk/go-figure"
 	"os"
 )
 
 // Main
 func main() {
+	// print ascii art
+	myFigure := figure.NewColorFigure("Retro Gaming", "rectangles", "green", true)
+  	myFigure.Print()
+  	fmt.Println()
 	// check command line arguments
 	if len(os.Args) != 2 {
 		fmt.Printf("Usage: %s <path to roms file> \n ", os.Args[0])

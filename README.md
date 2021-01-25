@@ -9,7 +9,22 @@
 
 2. Usage: `getgamenames <path to roms file>` 
 
-3. The `gamelist.txt` will be created in the same location
+3. Example:
+
+``` 
+$ ./getgamenames test/roms/
+
+ _____       _                _____              _
+| __  | ___ | |_  ___  ___   |   __| ___  _____ |_| ___  ___
+|    -|| -_||  _||  _|| . |  |  |  || .'||     || ||   || . |
+|__|__||___||_|  |_|  |___|  |_____||__,||_|_|_||_||_|_||_  |
+                                                        |___|
+
+Starting game names extraction...
+Done!!!
+```
+
+4. The `gamelist.txt` will be created in the same location
 
 
 #### SonarQube Score

@@ -12,3 +12,6 @@ sonar-scanner
 #   -Dsonar.sources=. \
 #   -Dsonar.host.url=http://localhost:9000 \
 #   -Dsonar.login=8920618f1dc1246322b759676ce31b1152224fd3
+
+# docker stop $(docker ps -a -q)
+# docker rm $(docker ps -a -q)
