@@ -12,7 +12,7 @@
 3. Example:
 
 ``` 
-$ ./getgamenames test/roms/
+pi@retropie:~/RetroPie $ ./getgamenames roms/
 
  _____       _                _____              _
 | __  | ___ | |_  ___  ___   |   __| ___  _____ |_| ___  ___
