@@ -2,7 +2,7 @@ package gamelist_test
 
 import (
 	//"fmt"
-	"getgamenames/pkg"
+	"get_game_names/pkg"
 	"io/ioutil"
 	"os"
 	"testing"

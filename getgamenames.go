@@ -9,7 +9,7 @@ package main
 
 import (
 	"fmt"
-	"getgamenames/pkg"
+	"get_game_names/pkg"
 	"github.com/common-nighthawk/go-figure"
 	"os"
 )
