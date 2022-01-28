@@ -12,7 +12,7 @@ import (
 // test game list functions
 func TestGameList(t *testing.T) {
 	// test total games
-	gameList := gamelist.GetGameList("megadrive")
+	gameList := gamelist.GetGameList("mega")
 	//fmt.Println(gameList)
 	if len(gameList) != 94 {
 		t.Errorf("Can't read the test file")
@@ -29,15 +29,14 @@ func TestGameList(t *testing.T) {
 	}
 }
 
-// test extract list functions
+//test extract list functions
 func TestExtractList(t *testing.T) {
 	// test gamelist.txt creation
 	os.Chmod("gamelist.txt", 0600)
 	gamelist.ExtractGameList("roms")
 	gameListFile, err := ioutil.ReadFile("gamelist.txt")
-	// fmt.Println(len(gameListFile))
-	// fmt.Println(err)
-	if len(gameListFile) != 2017 || err != nil{		
+	//fmt.Println(len(gameListFile))
+	if len(gameListFile) != 2012 || err != nil{		
 		t.Errorf("Can't read the folder correctly")
 	}
 	//test if gamelist.txt can be created
