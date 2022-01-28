@@ -1,7 +1,6 @@
 package gamelist_test
 
 import (
-	//"fmt"
 	"get_game_names/pkg"
 	"io/ioutil"
 	"os"
@@ -13,7 +12,6 @@ import (
 func TestGameList(t *testing.T) {
 	// test total games
 	gameList := gamelist.GetGameList("mega")
-	//fmt.Println(gameList)
 	if len(gameList) != 94 {
 		t.Errorf("Can't read the test file")
 	}
@@ -35,7 +33,6 @@ func TestExtractList(t *testing.T) {
 	os.Chmod("gamelist.txt", 0600)
 	gamelist.ExtractGameList("roms")
 	gameListFile, err := ioutil.ReadFile("gamelist.txt")
-	//fmt.Println(len(gameListFile))
 	if len(gameListFile) != 2012 || err != nil{		
 		t.Errorf("Can't read the folder correctly")
 	}

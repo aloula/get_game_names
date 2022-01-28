@@ -49,6 +49,7 @@ type gameList struct {
 // Global variables
 var totalGamesAllSystems int
 
+
 // Extract the game names and sort it
 func GetGameList(folder string) []string {
 	data, err := ioutil.ReadFile("roms/" + folder + "/gamelist.xml")
@@ -84,25 +85,19 @@ func ExtractGameList(romsPath string) error {
 	// Extract game names recursively and save it to gamelist.txt file
 	fmt.Println("Starting game names extraction...")
 	
-	//totalRoms := 0
+
 	for _, f := range folders {
 		folders := f.Name()
-		//fmt.Println(folders)
 		gameNames := GetGameList(folders)
 		platform := "Platform: " + strings.Title(folders) + "\n\n"
 		totalGames := len(gameNames)
 		totalGamesAllSystems = totalGamesAllSystems + totalGames
 		strTotalGames := "\n- Total Games = " + strconv.Itoa(totalGames)
-		//fmt.Println(totalGames)
 		if totalGames != 0 {
-			//file.WriteString("================================================================================\n")
 			file.WriteString(platform)
-			//file.WriteString("\n================================================================================\n")
 			for i := 0; i < totalGames; i++ {
-				//fmt.Println(gameNames[i])
 				file.WriteString(gameNames[i] + "\n")
 			}
-			//file.WriteString("================================================================================")
 			file.WriteString(strTotalGames)
 			file.WriteString("\n\n================================================================================\n\n")
 		}

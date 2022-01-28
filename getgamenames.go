@@ -1,9 +1,9 @@
-/* 
+/*
 Read gamelist.xml files recursively and extract the Game Name saving it to a gamelist.txt file
 Code by: Alexsander Loula
 Email: alex.loula@gmail.com
-Usage: getgamenames <path to roms file> 
-*/ 
+Usage: getgamenames <path to roms file>
+*/
 
 package main
 
@@ -18,8 +18,8 @@ import (
 func main() {
 	// print ascii art
 	myFigure := figure.NewColorFigure("Retro Gaming", "rectangles", "green", true)
-  	myFigure.Print()
-  	fmt.Println()
+	myFigure.Print()
+	fmt.Println()
 	// check command line arguments
 	if len(os.Args) != 2 {
 		fmt.Printf("Usage: %s <path to roms file> \n ", os.Args[0])
