@@ -2,7 +2,6 @@ package gamelist
 
 import (
 	"encoding/xml"
-	"fmt"
 	"io/ioutil"
 	"os"
 	"sort"
@@ -54,7 +53,6 @@ var totalGamesAllSystems int
 func GetGameList(folder string) []string {
 	data, err := ioutil.ReadFile("roms/" + folder + "/gamelist.xml")
 	if err != nil {
-		//fmt.Println(err)
 		return nil
 	}
 	gamelist := &gameList{}
@@ -82,10 +80,8 @@ func ExtractGameList(romsPath string) error {
 	if err != nil {
 		return err
 	}
-	// Extract game names recursively and save it to gamelist.txt file
-	fmt.Println("Starting game names extraction...")
-	
 
+	// Extract game names recursively and save it to gamelist.txt file
 	for _, f := range folders {
 		folders := f.Name()
 		gameNames := GetGameList(folders)
@@ -105,6 +101,5 @@ func ExtractGameList(romsPath string) error {
 	strTotalGamesAllSystems := "- Total Games All Systems = " + strconv.Itoa(totalGamesAllSystems)
 	file.WriteString(strTotalGamesAllSystems)
 	file.Close()
-	fmt.Println("Done!!!")
 	return err
 }

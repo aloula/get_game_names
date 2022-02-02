@@ -28,6 +28,8 @@ func main() {
 		os.Exit(1)
 	}
 	romsPath := os.Args[1]
+	fmt.Println("Starting game names extraction...")
 	gamelist.ExtractGameList(romsPath)
+	fmt.Println("Done!!!")
 	os.Exit(0)
 }
