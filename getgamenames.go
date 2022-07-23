@@ -2,7 +2,7 @@
 Read gamelist.xml files recursively and extract the Game Name saving it to a gamelist.txt file
 Code by: Alexsander Loula
 Email: alex.loula@gmail.com
-Usage: getgamenames <path to roms file>
+Usage: getgamenames <path to gamelistsfile>
 */
 
 package main
@@ -22,12 +22,11 @@ func main() {
 	fmt.Println()
 	// check command line arguments
 	if len(os.Args) != 2 {
-		fmt.Printf("Usage: %s <path to roms file> \n ", os.Args[0])
-		fmt.Printf("Example: %s /recalbox/share/roms \n ", os.Args[0])
-		fmt.Printf("Example: %s roms \n", os.Args[0])
+		fmt.Printf("Usage: %s <gamelists folder> \n ", os.Args[0])
+		fmt.Printf("Example: %s ~/.emulationstation/gamelists/ \n ", os.Args[0])
 		os.Exit(1)
 	}
-	romsPath := os.Args[1]
-	gamelist.ExtractGameList(romsPath)
+	gamelistsPath := os.Args[1]
+	gamelist.ExtractGameList(gamelistsPath)
 	os.Exit(0)
 }

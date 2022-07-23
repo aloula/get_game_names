@@ -11,17 +11,17 @@ import (
 // test game list functions
 func TestGameList(t *testing.T) {
 	// test total games
-	gameList := gamelist.GetGameList("mega")
-	if len(gameList) != 94 {
+	gameList := gamelist.GetGameList("gamelists", "megadrive")
+	if len(gameList) != 78 {
 		t.Errorf("Can't read the test file")
 	}
 	// test game name
 	gameNames := gameList[0]
-	if gameNames != "Aero the Acro-Bat" {
+	if gameNames != "Aladdin" {
 		t.Errorf("Can't extract game name")
 	}
 	// test game list error
-	gameListerr := gamelist.GetGameList("notvalid")
+	gameListerr := gamelist.GetGameList("notvalid", "notvalid")
 	if gameListerr != nil {
 		t.Errorf("It should return nil due to the invalid path")
 	}
@@ -31,9 +31,9 @@ func TestGameList(t *testing.T) {
 func TestExtractList(t *testing.T) {
 	// test gamelist.txt creation
 	os.Chmod("gamelist.txt", 0600)
-	gamelist.ExtractGameList("roms")
+	gamelist.ExtractGameList("gamelists")
 	gameListFile, err := ioutil.ReadFile("gamelist.txt")
-	if len(gameListFile) != 2012 || err != nil{		
+	if len(gameListFile) != 2867 || err != nil{		
 		t.Errorf("Can't read the folder correctly")
 	}
 	//test if gamelist.txt can be created

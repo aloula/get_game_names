@@ -51,8 +51,8 @@ var totalGamesAllSystems int
 
 
 // Extract the game names and sort it
-func GetGameList(folder string) []string {
-	data, err := ioutil.ReadFile("roms/" + folder + "/gamelist.xml")
+func GetGameList(gamelistsPath string, folder string) []string {
+	data, err := ioutil.ReadFile(gamelistsPath + "/" + folder + "/gamelist.xml")
 	if err != nil {
 		//fmt.Println(err)
 		return nil
@@ -72,13 +72,13 @@ func GetGameList(folder string) []string {
 
 
 // Generate Game List function
-func ExtractGameList(romsPath string) error {
+func ExtractGameList(gamelistsPath string) error {
 	file, err := os.Create("gamelist.txt")
 	if err != nil {
 		return err
 	}
-	// List folders (system names) inside roms dir 
-	folders, err := ioutil.ReadDir(romsPath + "/.")
+	// List folders (system names) inside gamelists dir 
+	folders, err := ioutil.ReadDir(gamelistsPath + "/.")
 	if err != nil {
 		return err
 	}
@@ -88,8 +88,8 @@ func ExtractGameList(romsPath string) error {
 
 	for _, f := range folders {
 		folders := f.Name()
-		gameNames := GetGameList(folders)
-		platform := "Platform: " + strings.Title(folders) + "\n\n"
+		gameNames := GetGameList(gamelistsPath, folders)
+		platform := "Platform: " + strings.ToUpper(folders) + "\n\n"
 		totalGames := len(gameNames)
 		totalGamesAllSystems = totalGamesAllSystems + totalGames
 		strTotalGames := "\n- Total Games = " + strconv.Itoa(totalGames)

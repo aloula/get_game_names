@@ -120,9 +120,10 @@ type gameList struct {
 // Global variables
 var totalGamesAllSystems int
 
+
 // Extract the game names and sort it
-func GetGameList(folder string) []string <span class="cov8" title="1">{
-        data, err := ioutil.ReadFile("roms/" + folder + "/gamelist.xml")
+func GetGameList(gamelistsPath string, folder string) []string <span class="cov8" title="1">{
+        data, err := ioutil.ReadFile(gamelistsPath + "/" + folder + "/gamelist.xml")
         if err != nil </span><span class="cov8" title="1">{
                 //fmt.Println(err)
                 return nil
@@ -142,38 +143,32 @@ func GetGameList(folder string) []string <span class="cov8" title="1">{
 
 
 // Generate Game List function
-func ExtractGameList(romsPath string) error <span class="cov8" title="1">{
+func ExtractGameList(gamelistsPath string) error <span class="cov8" title="1">{
         file, err := os.Create("gamelist.txt")
         if err != nil </span><span class="cov8" title="1">{
                 return err
         }</span>
-        // List folders (system names) inside roms dir 
-        <span class="cov8" title="1">folders, err := ioutil.ReadDir(romsPath + "/.")
+        // List folders (system names) inside gamelists dir 
+        <span class="cov8" title="1">folders, err := ioutil.ReadDir(gamelistsPath + "/.")
         if err != nil </span><span class="cov8" title="1">{
                 return err
         }</span>
         // Extract game names recursively and save it to gamelist.txt file
         <span class="cov8" title="1">fmt.Println("Starting game names extraction...")
         
-        //totalRoms := 0
+
         for _, f := range folders </span><span class="cov8" title="1">{
                 folders := f.Name()
-                //fmt.Println(folders)
-                gameNames := GetGameList(folders)
-                platform := "Platform: " + strings.Title(folders) + "\n\n"
+                gameNames := GetGameList(gamelistsPath, folders)
+                platform := "Platform: " + strings.ToUpper(folders) + "\n\n"
                 totalGames := len(gameNames)
                 totalGamesAllSystems = totalGamesAllSystems + totalGames
                 strTotalGames := "\n- Total Games = " + strconv.Itoa(totalGames)
-                //fmt.Println(totalGames)
                 if totalGames != 0 </span><span class="cov8" title="1">{
-                        //file.WriteString("================================================================================\n")
                         file.WriteString(platform)
-                        //file.WriteString("\n================================================================================\n")
                         for i := 0; i &lt; totalGames; i++ </span><span class="cov8" title="1">{
-                                //fmt.Println(gameNames[i])
                                 file.WriteString(gameNames[i] + "\n")
                         }</span>
-                        //file.WriteString("================================================================================")
                         <span class="cov8" title="1">file.WriteString(strTotalGames)
                         file.WriteString("\n\n================================================================================\n\n")</span>
                 }
