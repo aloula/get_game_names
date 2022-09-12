@@ -2,7 +2,7 @@ mode: set
 get_game_names/pkg/gamelist.go:54.64,56.16 2 1
 get_game_names/pkg/gamelist.go:60.2,63.42 4 1
 get_game_names/pkg/gamelist.go:69.2,70.18 2 1
-get_game_names/pkg/gamelist.go:56.16,59.3 1 1
+get_game_names/pkg/gamelist.go:56.16,59.3 1 0
 get_game_names/pkg/gamelist.go:63.42,65.40 1 1
 get_game_names/pkg/gamelist.go:65.40,67.4 1 1
 get_game_names/pkg/gamelist.go:75.50,77.16 2 1

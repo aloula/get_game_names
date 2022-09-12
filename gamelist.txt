@@ -1,0 +1,135 @@
+Platform: MEGADRIVE
+
+Aladdin
+Aladdin 2
+Alex Kidd in the Enchanted Castle
+Alisia Dragoon
+Altered Beast
+Battle Squadron
+Battletoads
+Battletoads & Double Dragon
+Castle of Illusion Starring Mickey Mouse
+Castlevania : Bloodlines
+DJ Boy
+Double Dragon
+Double Dragon 3 : The Arcade Game
+Double Dragon V : The Shadow Falls
+Double Dribble : The Playoff Edition
+Earthworm Jim
+Earthworm Jim 2
+Elemental Master
+Fantasia
+Fatal Fury
+Fatal Fury 2
+Flashback : The Quest for Identity
+Forgotten Worlds
+Frogger
+Gaiares
+Ghouls'n Ghosts
+Golden Axe
+Golden Axe II
+Gunstar Heroes
+Joe & Mac
+Mega Man : The Wily Wars
+Mega Turrican
+Mickey's Ultimate Challenge
+OutRun
+Pocahontas
+Rastan Saga II
+Road Rash
+Road Rash 3
+Road Rash II
+Rockman X3
+Rolling Thunder 2
+Rolling Thunder 3
+Sagaia
+Shadow Dancer : The Secret of Shinobi
+Shadow of the Beast
+Shadow of the Beast II
+Shining Force
+Shining Force II
+Shinobi III : Return of the Ninja Master
+Sonic The Hedgehog
+Sonic The Hedgehog 2
+Sonic The Hedgehog 3
+Street Fighter II' : Special Champion Edition
+Street Fighter II' : Special Champion Edition
+Streets of Rage
+Streets of Rage 2
+Streets of Rage 3
+Strider
+Strider Returns : Journey from Darkness
+Striker
+Sub-Terrania
+Super Mario Bros.
+Syd of Valis
+Teenage Mutant Ninja Turtles - The Legend Returns
+Teenage Mutant Ninja Turtles : The Hyperstone Heist
+Teenage Mutant Ninja Turtles : Tournament Fighters
+The Great Circus Mystery Starring Mickey & Minnie
+The Revenge of Shinobi
+Thunder Force II
+Thunder Force III
+Turrican
+Twin Cobra : Desert Attack Helicopter
+Valis
+Valis III
+Vectorman
+Vectorman 2
+World of Illusion Starring Mickey Mouse and Donald Duck
+Zero Wing
+
+- Total Games = 78
+
+================================================================================
+
+Platform: SNES
+
+Aladdin
+Axelay
+Battletoads & Double Dragon
+Battletoads in Battlemaniacs
+Castlevania : Dracula X
+Donkey Kong Country
+Donkey Kong Country 2 : Diddy's Kong Quest
+Donkey Kong Country 3 : Dixie Kong's Double Trouble!
+Double Dragon V : The Shadow Falls
+F-Zero
+Gradius III
+GunForce : Battle Fire Engulfed Terror Island
+Illusion of Gaia
+Kirby Super Star
+Kirby's Avalanche
+Kirby's Avalanche
+Kirby's Dream Course
+Kirby's Dream Land 3
+Mega Man 7
+Mega Man X2
+Mega Man X3
+Metal Combat : Falcon's Revenge
+Mickey Mania : The Timeless Adventures of Mickey Mouse
+Mickey's Playtown Adventure : A Day of Discovery!
+Mickey's Ultimate Challenge
+R-Type III
+Space Megaforce
+Street Fighter II
+Street Fighter II Turbo
+Super Castlevania IV
+Super Double Dragon
+Super Ghouls'n Ghosts
+Super Mario World
+Super Mario World 2 : Yoshi's Island
+Super Metroid
+Super R-Type
+Super Turrican
+Super Turrican 2
+Super Valis IV
+The Great Circus Mystery Starring Mickey & Minnie
+The Legend of Zelda : A Link to the Past
+U.N. Squadron
+
+- Total Games = 42
+
+================================================================================
+
+- Total Games All Systems = 120
