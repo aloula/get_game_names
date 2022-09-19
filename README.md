@@ -29,5 +29,5 @@ Done!!!
 
 #### SonarQube Score
 
-![SonarQube](img/sonar_score.png)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=aloula_get_game_names&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=aloula_get_game_names)
 
