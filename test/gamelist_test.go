@@ -41,13 +41,13 @@ func TestExtractList(t *testing.T) {
 	if len(gameListFile) != fileSize || err != nil{		
 		t.Errorf("Can't read the folder correctly")
 	}
-	//test if gamelist.txt can't be created
-	// os.Chmod("gamelist.txt", 0400)
-	// expectedCreationErr := "open gamelist.txt: permission denied"
-	// creationErr := gamelist.ExtractGameList("roms") 
-	// if creationErr.Error() != expectedCreationErr{
-	// 	t.Errorf("It shouldn't create gamelist.txt file")
-	// }
+	// test if gamelist.txt can't be created
+	os.Chmod("gamelist.txt", 0400)
+	expectedCreationErr := "open gamelist.txt: permission denied"
+	creationErr := gamelist.ExtractGameList("roms") 
+	if creationErr.Error() != expectedCreationErr{
+		t.Errorf("It shouldn't create gamelist.txt file")
+	}
 	//test if roms path exist
 	os.Chmod("gamelist.txt", 0600)
 	expectedRomsErr := "open rom/.: no such file or directory"
