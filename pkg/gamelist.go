@@ -3,7 +3,6 @@ package gamelist
 import (
 	"encoding/xml"
 	"fmt"
-	"io/ioutil"
 	"os"
 	"sort"
 	"strconv"
@@ -52,7 +51,7 @@ var totalGamesAllSystems int
 
 // Extract the game names and sort it
 func GetGameList(gamelistsPath string, folder string) []string {
-	data, err := ioutil.ReadFile(gamelistsPath + "/" + folder + "/gamelist.xml")
+	data, err := os.ReadFile(gamelistsPath + "/" + folder + "/gamelist.xml")
 	if err != nil {
 		//fmt.Println(err)
 		return nil
@@ -78,7 +77,7 @@ func ExtractGameList(gamelistsPath string) error {
 		return err
 	}
 	// List folders (system names) inside gamelists dir 
-	folders, err := ioutil.ReadDir(gamelistsPath + "/.")
+	folders, err := os.ReadDir(gamelistsPath + "/.")
 	if err != nil {
 		return err
 	}

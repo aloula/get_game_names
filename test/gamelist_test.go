@@ -2,7 +2,6 @@ package gamelist_test
 
 import (
 	"get_game_names/pkg"
-	"io/ioutil"
 	"os"
 	"testing"
 )
@@ -37,7 +36,7 @@ func TestExtractList(t *testing.T) {
 	// test if gamelist.txt can be created
 	os.Chmod("gamelist.txt", 0600)
 	gamelist.ExtractGameList("gamelists")
-	gameListFile, err := ioutil.ReadFile("gamelist.txt")
+	gameListFile, err := os.ReadFile("gamelist.txt")
 	if len(gameListFile) != fileSize || err != nil{		
 		t.Errorf("Can't read the folder correctly")
 	}
