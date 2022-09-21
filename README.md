@@ -7,12 +7,12 @@
 
 1. The pre-compiled packages for RPI, Linux and Windows (not tested) can be found at `builds`
 
-2. Usage: `getgamenames <path to gamelists files>` 
+2. Usage: `get_game_names <path to gamelists files>` 
 
 3. Example:
 
 ``` 
-pi@retropie:~ $ ./getgamenames .emulationstation/gamelists/
+pi@retropie:~ $ ./get_game_names .emulationstation/gamelists/
 
  _____       _                _____              _
 | __  | ___ | |_  ___  ___   |   __| ___  _____ |_| ___  ___
