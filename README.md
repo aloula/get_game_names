@@ -1,6 +1,8 @@
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=aloula_get_game_names&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=aloula_get_game_names)
+
 ### Simple Go script to extract game names from XML gamelist files
 
-#### It can be used with retro consoles based on EmulationStation as RetroPie. It reads the gamelist.xml files recursively, extract the game names and save it to a gamelist.txt file
+#### It can be used with retro consoles based on EmulationStation as RetroPie, Recalbox or Batocera. It reads the gamelist.xml files recursively, extract the game names and save it to a gamelist.txt file
 
 
 #### Instructions:
@@ -25,9 +27,3 @@ Done!!!
 ```
 
 4. The `gamelist.txt` will be created in the same location
-
-
-#### SonarQube Score
-
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=aloula_get_game_names&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=aloula_get_game_names)
-
